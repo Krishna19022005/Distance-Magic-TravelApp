@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="all.css">
+</head>
+<body>
+
+    <div>
+        <div id="intro" >
+            <div id="nav-container" class="px-4 fixed top-0 left-0 w-full bg-white z-50 pt-6 pb-4 flex justify-between items-center w-[95%] mx-auto ">
+                <div class="flex gap-2 items-center">
+                    <img src="Screenshot 2026-03-21 233132.png" class="w-8 h-8">
+                    <h2 class="text-2xl px-4 text-blue-600 font-semibold">Distance Magic</h2>
+                </div>
+                <ul id="navLinks" class="hidden md:flex justify-between gap-6 md:gap-8 lg:gap-10 text-md lg:text-lg text-gray-500">
+                    <li ><a href="index.html" class="nav-links  hover:text-gray-600">Home</a></li>
+                    <li><a href="discover.html" class="nav-links hover:text-gray-600">Discover</a></li>
+                    <li><a href="services.html" class="nav-links  hover:text-gray-600">Services</a></li>
+                    <li><a href="news.html" class="nav-links  hover:text-gray-600">News</a></li>
+                    <li><a href="about.html" class="nav-links  hover:text-gray-600">About Us</a></li>
+                    <li><a href="contact.html" class="nav-links hover:text-gray-600">Contact</a></li>
+                </ul>
+
+                <div id="acc" class="text-lg hidden md:flex items-center gap-x-2 text-blue-500">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <span class="text-lg">ID</span>
+                </div>
+                <div class="text-blue-500 md:hidden menuBtn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+            <div id="mobileMenu" class="fixed md:hidden md:right-[-100%] top-0 right-[-100%] w-[40%] h-full bg-pink-200 text-center  text-black z-50 transition-all duration-500">
+                <div class="p-4 text-2xl cursor-pointer" id="closeBtn">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </div>
+                <ul id="navLinks" class=" text-gray-700">
+                    <li ><a href="index.html" class="nav-links opacity-100 hover:opacity-90 hover:text-white">Home</a></li>
+                    <li><a href="discover.html" class="nav-links opacity-80 hover:opacity-90 hover:text-white">Discover</a></li>
+                    <li><a href="services.html" class="nav-links opacity-80 hover:opacity-90 hover:text-white">Services</a></li>
+                    <li><a href="news.html" class="nav-links opacity-80 hover:opacity-90 hover:text-white">News</a></li>
+                    <li><a href="about.html" class="nav-links opacity-80 hover:opacity-90 hover:text-white">About Us</a></li>
+                    <li><a href="contact.html" class="nav-links opacity-80 hover:opacity-90 hover:text-white">Contact</a></li>
+                </ul>
+            </div>
+    </div>
+
+    <div id="img" class="relative h-[250px] mt-8">
+        <img src="assets/services/image 3.png" class="w-full h-full object-cover">
+        <h2 class="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 text-2xl sm:text-3xl md:text-4xl text-white font-bold">Service</h2>
+    </div>
+
+    <div id="info" class="mt-16 w-[95%] mb-16 mx-auto">
+        <div id="boxes" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <div id="box">
+                <i class="fa-solid fa-tags text-xl"></i>
+                <h2 class="font-bold pt-2">Get Best Price</h2>
+                <p class="pt-4 text-gray-700">At Distance Magic, we ensure that your dream destinations come with the best possible prices. We  provide you with budget-friendly deals without compromising on quality and experience.</p>
+                <button class="mt-4 px-2 py-2 bg-green-700 rounded-lg text-white/80 active:scale-105">Read More</button>
+            </div>
+           <div id="box">
+                <i class="fa-solid fa-map text-xl"></i>
+                <h2 class="font-bold pt-2">All Destinations</h2>
+                <p class="pt-4 text-gray-700">Discover a wide range of destinations across the world with Distance Magic, from popular tourist hotspots to hidden gems waiting to be explored. Whether you’re looking for relaxing beaches, adventurous mountains.</p>
+                <button class="mt-4 px-2 py-2 bg-green-700 rounded-lg text-white/80 active:scale-105">Read More</button>
+            </div>
+            <div id="box" class="hidden sm:block">
+                <i class="fa-solid fa-city text-xl"></i>
+                <h2 class="font-bold pt-2">City Tours</h2>
+                <p class="pt-4 text-gray-700">Explore the heart of every destination with our carefully curated city tours. From iconic landmarks and historical sites to local markets and hidden streets, our tours give you a complete experience.</p>
+                <button class="mt-4 px-2 py-2 bg-green-700 rounded-lg text-white/80 active:scale-105">Read More</button>
+            </div>
+           <div id="box" class="hidden sm:block">
+                <i class="fa-solid fa-camera-retro text-xl"></i>
+                <h2 class="font-bold pt-2">PhotoGraphy</h2>
+                <p class="pt-4 text-gray-700">Capture the beauty of every destination with unforgettable moments through photography. From stunning landscapes and vibrant cityscapes to cultural events and hidden corners.</p>
+                <button class="mt-4 px-2 py-2 bg-green-700 rounded-lg text-white/80 active:scale-105">Read More</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="city" class="w-[95%] mx-auto mb-16">
+        <div id="boxes" class="grid grid-cols-1  sm:grid-cols-3 gap-6 justify-items-center">
+            <div id="box" class="bg-[url('assets/services/Rectangle%2021.png')] bg-cover bg-center min-h-[250px] max-w-[450px] rounded-lg ">
+                <h1 class="mt-4 text-white/80 font-semibold px-4 text-2xl">Water City Dreams</h1>
+                <h2 class="text-white/70 px-4 text-xl">September 18,2025</h2>
+                <p class="text-white/90 px-4 mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt culpa nulla necessitatibus pariatur.</p>
+                <button class="mt-8 mx-4 px-2 py-2 bg-green-500 rounded-lg text-white active:scale-105">Read More</button>
+            </div>
+            <div id="box" class="bg-[url('assets/services/Rectangle%2022.png')] bg-cover bg-center min-h-[250px] max-w-[450px] rounded-lg ">
+                <h1 class="mt-4 text-white/80 font-semibold px-4 text-2xl">Water City Dreams</h1>
+                <h2 class="text-white/70 px-4 text-xl">September 18,2025</h2>
+                <p class="text-white/90 px-4 mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt culpa nulla necessitatibus pariatur.</p>
+                <button class="mt-8 mx-4 px-2 py-2 bg-green-500 rounded-lg text-white active:scale-105">Read More</button>
+            </div>
+            <div id="box" class="bg-[url('assets/services/Rectangle%2021%20(2).png')] bg-cover bg-center min-h-[250px] max-w-[450px] rounded-lg ">
+                <h1 class="mt-4 text-white/80 font-semibold px-4 text-2xl">Water City Dreams</h1>
+                <h2 class="text-white/70 px-4 text-xl">September 18,2025</h2>
+                <p class="text-white/90 px-4 mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt culpa nulla necessitatibus pariatur.</p>
+                <button class="mt-8 mx-4 px-2 py-2 bg-green-500 rounded-lg text-white active:scale-105">Read More</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="facilities" class="mb-16 bg-[url('assets/services/Rectangle%2022.png')] bg-cover bg-center w-full h-[550px]">
+        <div id="content" class="w-[95%] mx-auto flex items-center gap-12">
+            <div id="left" class="mt-32 sm:w-[50%]">
+                <h2 class="text-3xl font-bold text-white">Facilities</h2>
+                <p class="mt-4 text-white/90 text-lg">Our facilities are designed to make your travel experience smooth, comfortable, and enjoyable. From easy booking options to reliable support and well-planned services, we ensure everything is taken care of. With modern amenities and user-friendly features, Distance Magic provides convenience at every step of your journey.</p>
+                <button class="mt-8 px-2 py-2 rounded-lg bg-green-700 text-white active:scale-105">Read More</button>
+            </div>
+            <div id="right" class="mt-12 ">
+                <div class="hidden sm:grid grid-cols-2 gap-4">
+                    <div class="box px-12 md:px-16 text-center py-8 md:py-12 rounded-lg bg-white/80">
+                        <i class="fa-solid fa-baby-carriage text-2xl"></i>
+                        <h2 class="text-4xl font-bold">Baby</h2>
+                        <h3 class="font-semibold text-lg mt-2">Free Buggy</h3>
+                    </div>
+                   <div class="box px-12 md:px-16 text-center py-8 md:py-12 rounded-lg bg-white/80">
+                    <i class="fa-solid fa-champagne-glasses text-2xl"></i>
+                        <h2 class="text-4xl font-bold">Drinks</h2>
+                        <h3 class="font-semibold text-lg mt-2">Included</h3>
+                    </div>
+                    <div class="boxpx-12 md:px-16 text-center py-8 md:py-12 py-12 rounded-lg bg-white/80">
+                        <i class="fa-solid fa-tent text-2xl"></i>
+                        <h2 class="text-4xl font-bold">Camp</h2>
+                        <h3 class="font-semibold text-lg mt-2">Included</h3>
+                    </div>
+                    <div class="box px-12 md:px-16 text-center py-8 md:py-12 py-12 rounded-lg bg-white/80">
+                        <i class="fa-solid fa-earth-europe text-2xl"></i>
+                        <h2 class="text-4xl font-bold">World</h2>
+                        <h3 class="font-semibold text-lg mt-2">Custom Tours</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="service" class="w-[90%] mx-auto mb-8">
+        <h2 class="text-center text-lg font-semibold">Benifits</h2>
+        <h1 class="text-center text-2xl font-bold my-2">Our Services</h1>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-8">
+            <div id="box">
+                <i class="fa-solid fa-tags text-xl"></i>
+                <h2 class="font-bold pt-2">Hiking</h2>
+                <p class="pt-4 text-gray-700">At Distance Magic, we ensure that your dream destinations come with the best possible prices. We  provide you with budget-friendly deals without compromising on quality and experience.</p>
+                <button class="mt-4 px-2 py-2 bg-green-700 rounded-lg text-white/80 active:scale-105">Read More</button>
+            </div>
+           <div id="box">
+                <i class="fa-solid fa-map text-xl"></i>
+                <h2 class="font-bold pt-2">Skating</h2>
+                <p class="pt-4 text-gray-700">Discover a wide range of destinations across the world with Distance Magic, from popular tourist hotspots to hidden gems waiting to be explored. Whether you’re looking for relaxing beaches, adventurous mountains.</p>
+                <button class="mt-4 px-2 py-2 bg-green-700 rounded-lg text-white/80 active:scale-105">Read More</button>
+            </div>
+            <div id="box" >
+                <i class="fa-solid fa-city text-xl"></i>
+                <h2 class="font-bold pt-2">Climbing</h2>
+                <p class="pt-4 text-gray-700">Explore the heart of every destination with our carefully curated city tours. From iconic landmarks and historical sites to local markets and hidden streets, our tours give you a complete experience.</p>
+                <button class="mt-4 px-2 py-2 bg-green-700 rounded-lg text-white/80 active:scale-105">Read More</button>
+            </div>
+           <div id="box" >
+                <i class="fa-solid fa-camera-retro text-xl"></i>
+                <h2 class="font-bold pt-2">Tours</h2>
+                <p class="pt-4 text-gray-700">Capture the beauty of every destination with unforgettable moments through photography. From stunning landscapes and vibrant cityscapes to cultural events and hidden corners.</p>
+                <button class="mt-4 px-2 py-2 bg-green-700 rounded-lg text-white/80 active:scale-105">Read More</button>
+            </div>
+            <div id="box" class="hidden sm:block">
+                <i class="fa-solid fa-city text-xl"></i>
+                <h2 class="font-bold pt-2">Diving</h2>
+                <p class="pt-4 text-gray-700">Explore the heart of every destination with our carefully curated city tours. From iconic landmarks and historical sites to local markets and hidden streets, our tours give you a complete experience.</p>
+                <button class="mt-4 px-2 py-2 bg-green-700 rounded-lg text-white/80 active:scale-105">Read More</button>
+            </div>
+           <div id="box" class="hidden sm:block">
+                <i class="fa-solid fa-camera-retro text-xl"></i>
+                <h2 class="font-bold pt-2">Flying</h2>
+                <p class="pt-4 text-gray-700">Capture the beauty of every destination with unforgettable moments through photography. From stunning landscapes and vibrant cityscapes to cultural events and hidden corners.</p>
+                <button class="mt-4 px-2 py-2 bg-green-700 rounded-lg text-white/80 active:scale-105">Read More</button>
+            </div>
+        </div>
+    </div>
+
+     <div id="footer" class="bg-green-800">
+            <div class="grid grid-cols-3 md:grid-cols-4 gap-8 py-12 px-8 w-[90%] mx-auto text-white/70 gap-8 justify-items-center justify-between">
+                <div class="hidden md:flex flex-col gap-8">
+                    <h2 class="font-bold text-xl text-white/90">Distance Magic</h2>
+                    <p>Distance Magic is a travel platform designed to help you discover amazing destinations and plan your journeys with ease. From exploring new places to creating unforgettable memories, we make every step of your travel experience simple and enjoyable.</p>
+                </div>
+                <div class="flex flex-col gap-8">
+                    <h2 class="font-bold text-xl text-white/90">Links</h2>
+                    <ul class="flex flex-col gap-3">
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="">Special Deals</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="">Community</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-8">
+                    <h2 class="font-bold text-xl text-white/90">Services</h2>
+                    <ul class="flex flex-col gap-3">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="news.html">Blog and Articles</a></li>
+                        <li><a href="">Terms and Conditions</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div >
+                <div class="flex flex-col gap-8">
+                    <h2 class="font-bold text-xl text-white/90">Contact</h2>
+                    <ul class="flex flex-col gap-3">
+                        <li>Address:Ram Nagar Colony</li>
+                        <li>Islamabad</li>
+                        <li>Amritsar, Punjab</li>
+                        <li>143001</li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+
+      <script>
+
+        let links = document.querySelectorAll(".nav-links");
+             links.forEach(link => {
+                if (link.href === window.location.href) {
+                    link.classList.add("font-bold", "text-green-500");
+                }
+
+                link.addEventListener("click", function () {
+                    links.forEach(l => {
+                        l.classList.remove("font-bold", "text-green-500");
+                    });
+
+                    this.classList.add("font-bold", "text-green-500");
+                });
+            });
+       
+
+        let mobileMenu = document.getElementById("mobileMenu");
+        let closeBtn = document.getElementById("closeBtn");
+        let menuBtn = document.querySelector(".menuBtn");
+
+        menuBtn.addEventListener("click",()=>{
+            mobileMenu.style.right ="0";
+        });
+
+        closeBtn.addEventListener("click",()=>{
+            mobileMenu.style.right ="-100%"
+        });
+
+        window.addEventListener("resize", () => {
+            if (window.innerWidth >= 768) {
+                mobileMenu.style.right = "-100%";
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="all.css">
+</head>
+<body>
+    <section id="home-page">
+        <div id="intro" class="bg-[url('assets/home/Background.png')] bg-cover min-h-screen bg-center">
+            <div id="nav-container" class="pt-8 pb-4 flex text-gray/50 justify-between items-center w-[95%] mx-auto">
+                <div class="flex gap-2 items-center">
+                    <img src="Screenshot 2026-03-21 233132.png" class="w-8 h-8 rounded-full">
+                    <h2 class="text-2xl px-4 text-white font-semibold">Distance Magic</h2>
+                </div>
+                <ul id="navLinks" class="hidden md:flex justify-between gap-6 md:gap-8 lg:gap-10 text-md lg:text-lg text-gray-100">
+                    <li ><a href="index.html" class="nav-links opacity-100 hover:opacity-90 hover:text-white font-bold">Home</a></li>
+                    <li><a href="discover.html" class="nav-links opacity-80 hover:opacity-90 hover:text-white">Discover</a></li>
+                    <li><a href="services.html" class="nav-links opacity-80 hover:opacity-90 hover:text-white">Services</a></li>
+                    <li><a href="news.html" class="nav-links opacity-80 hover:opacity-90 hover:text-white">News</a></li>
+                    <li><a href="about.html" class="nav-links opacity-80 hover:opacity-90 hover:text-white">About Us</a></li>
+                    <li><a href="contact.html" class="nav-links opacity-80 hover:opacity-90 hover:text-white">Contact</a></li>
+                </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+                <div id="acc" class="text-lg hidden md:flex items-center gap-x-2 text-white">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <span class="text-lg">ID</span>
+                </div>
+                <div class="text-white md:hidden menuBtn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+            <div id="mobileMenu" class="fixed md:hidden md:right-[-100%] top-0 right-[-100%] w-[40%] h-full bg-green-600 text-center  text-white z-50 transition-all duration-500">
+                <div class="p-4 text-2xl cursor-pointer" id="closeBtn">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </div>
+                <ul id="navLinks" class=" text-gray-100">
+                    <li ><a href="index.html" class="nav-links opacity-100 hover:opacity-90 hover:text-white font-bold">Home</a></li>
+                    <li><a href="discover.html" class="nav-links opacity-80 hover:opacity-90 hover:text-white">Discover</a></li>
+                    <li><a href="services.html" class="nav-links opacity-80 hover:opacity-90 hover:text-white">Services</a></li>
+                    <li><a href="news.html" class="nav-links opacity-80 hover:opacity-90 hover:text-white">News</a></li>
+                    <li><a href="about.html" class="nav-links opacity-80 hover:opacity-90 hover:text-white">About Us</a></li>
+                    <li><a href="contact.html" class="nav-links opacity-80 hover:opacity-90 hover:text-white">Contact</a></li>
+                </ul>
+            </div>
+
+            <div id="heading" class="w-[90%] sm:w-[70%] md:w-[55%] text-center mt-20 sm:mt-26 md:mt-36 text-white mx-auto align-center">
+                <h1 class="text-xl sm:text-2xl md:text-3xl shadow-xl shadow-black/30 lg:4xl text-green-400 bg-black/40 rounded-lg font-semibold">Find Peace and Purpose in Every Journey You Take</h1>
+                <p class="opacity-80 rounded-lg px-2 shadow-xl shadow-black/30 py-1 text-white bg-black/50 text-sm md:text-lg md:font-semibold  mt-8 text-center">Escape the noise and reconnect with nature’s beauty across the world’s most serene locations.
+                    Let every journey bring you closer to breathtaking landscapes, peaceful moments, and unforgettable experiences.</p>
+            </div>
+
+            <div id="searchBox" class="w-[90%] md:w-[60%] lg:w-[55%]  text-sm lg:text-lg mx-auto flex justify-between items-center text-black shadow-md bg-white py-1 px-2 lg:py-2 lg:px-4 mt-10 md:mt-16 lg:mt-32 border rounded-lg">
+                <div class="flex gap-x-1 sm:gap-x-2 md:gap-x-4 opacity-70 items-center border-r-2 border-gray-600 pr-2 md:pr-4 lg:pr-6"><i class="fa-solid fa-location-crosshairs"></i> <span>City or Destination</span></div>
+                <div class="opacity-70 hidden sm:flex border-r-2 border-gray-600 pr-2 md:pr-4 lg:pr-6">CheckIn Date</div>
+                <div class="opacity-70 border-r-2 border-gray-600 pr-2 md:pr-4 lg:pr-6">Travellers</div>
+                <div class="p-1 bg-green-500 border rounded-lg text-white hover:bg-green-600 active:scale-[0.9] duration-250 drop-shadow-md"><button class="flex gap-1 md:gap-x-2 lg:gap-x-4 items-center">
+                    <span>find My Trip</span>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button></div>
+            </div>
+
+        </div>
+
+        <div id="intro-2 " class="w-[90%]  mx-auto pt-16 flex gap:20 md:gap-36">
+            <div id="images" class="hidden lg:flex relative  max-w-[400px] w-full h-[400px]">
+                <div class="absolute left- top-4 w-56 h-80">
+                    <img src="assets/home/Subtract.png" class="object-cover">
+                </div>
+                <div class="absolute left-56 top-28 w-40 h-56">
+                    <img src="assets/home/Subtract (1).png" class="object-cover">
+                </div>
+                <div class="absolute -right-28 -top-8 w-44 h-72">
+                    <img src="assets/home/Rectangle 9.png" class="object-cover">
+                </div>
+            </div>
+            <div id="content" class="max-w-[700px] w-full px-8">
+                <h3 class="text-lg text-green-800 font-semibold">Travelers Point</h3>
+                <h1 class="text-2xl font-bold my-6">We help to find your dream place</h1>
+                <p class="text-lg text-gray-600 mb-4"> Every journey tells a story. Whether you're seeking calm landscapes or thrilling 
+                    adventures, we guide you to places that connect you with nature, culture, and yourself. 
+                    Let us turn your travel dreams into meaningful experiences you'll cherish forever.
+                </p>
+
+                <div id="grid" class="grid grid-cols-2 gap-4">
+                    <div class="gap-2">
+                        <h2 class="text-green-800 font-bold text-2xl ">100+</h2>
+                        <p>Holiday Packages</p>
+                    </div>
+                    <div class="gap-2">
+                        <h2 class="text-green-800 font-bold text-2xl">172</h2>
+                        <p>Hotels</p>
+                    </div>
+                    <div class="gap-2">
+                        <h2 class="text-green-800 font-bold text-2xl">68</h2>
+                        <p>Elite Transformation</p>
+                    </div>
+                    <div class="gap-2">
+                        <h2 class="text-green-800 font-bold text-2xl">32M+</h2>
+                        <p>Clients</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="destinations" class="mt-12 w-[95%]  mx-auto">
+            <h3 class="text-center text-green-800 text-lg font-semibold">Top Destinations</h3>
+            <h2 class="text-2xl font-bold text-center py-4">Discover Your Love</h2>
+
+            <div class="cards grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center">
+                <div id="card" class="w-full max-w-[300px] h-[280px] flex flex-col items-center rounded-lg shadow shadow-lg hover:shadow-xl hover:-translate-y-1 hover:scale-120 transition-all duration-250 ">
+                    <img src="assets/home/Rectangle 5 (2).png" class="w-[95%] h-[70%] pt-4 rounded-lg object-cover">
+                    <h2 class="font-bold">Scuba Diving</h2>
+                    <p class="px-2 text-gray-500">Dive into crystal-clear waters and discover a hidden world full of colors.</p>
+                </div>
+                <div id="card" class="w-full max-w-[300px] h-[280px] flex flex-col items-center rounded-lg shadow shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-250 ">
+                    <img src="assets/home/Rectangle 5 (1).png" class="w-[95%] h-[70%] pt-4 rounded-lg object-cover">
+                    <h2 class="font-bold">Scuba Diving</h2>
+                    <p class="px-2 text-gray-500">Dive into crystal-clear waters and discover a hidden world full of colors.</p>
+                </div>
+                <div id="card" class="w-full max-w-[300px] h-[280px] flex flex-col items-center rounded-lg shadow shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-250 ">
+                    <img src="assets/home/Rectangle 5 (3).png" class="w-[95%] h-[70%] pt-4 rounded-lg object-cover">
+                    <h2 class="font-bold">Scuba Diving</h2>
+                    <p class="px-2 text-gray-500">Dive into crystal-clear waters and discover a hidden world full of colors.</p>
+                </div>
+                <div id="card" class="w-full max-w-[300px] h-[280px] flex flex-col items-center rounded-lg shadow shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-250 ">
+                    <img src="assets/home/Group 14.png" class="w-[95%] h-[70%] pt-4 rounded-lg object-cover">
+                    <h2 class="font-bold">Scuba Diving</h2>
+                    <p class="px-2 text-gray-500">Dive into crystal-clear waters and discover a hidden world full of colors.</p>
+                </div>
+                <div id="card" class="w-full max-w-[300px] h-[280px] flex flex-col items-center rounded-lg shadow shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-250 ">
+                    <img src="assets/home/Rectangle 5.png" class="w-[95%] h-[70%] pt-4 rounded-lg object-cover">
+                    <h2 class="font-bold">Scuba Diving</h2>
+                    <p class="px-2 text-gray-500">Dive into crystal-clear waters and discover a hidden world full of colors.</p>
+                </div>
+                <div id="card" class="w-full max-w-[300px] h-[280px] flex flex-col items-center rounded-lg shadow shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-250 ">
+                    <img src="assets/home/Group 14 (1).png" class="w-[95%] h-[70%] pt-4 rounded-lg object-cover">
+                    <h2 class="font-bold">Scuba Diving</h2>
+                    <p class="px-2 text-gray-500">Dive into crystal-clear waters and discover a hidden world full of colors.</p>
+                </div>
+                <div id="card" class="w-full max-w-[300px] h-[280px] flex flex-col items-center rounded-lg shadow shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-250 ">
+                    <img src="assets/home/Group 14.png" class="w-[95%] h-[70%] pt-4 rounded-lg object-cover">
+                    <h2 class="font-bold">Scuba Diving</h2>
+                    <p class="px-2 text-gray-500">Dive into crystal-clear waters and discover a hidden world full of colors.</p>
+                </div>
+                <div id="card" class="w-full max-w-[300px] h-[280px] flex flex-col items-center rounded-lg shadow shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-250 ">
+                    <img src="assets/home/Rectangle 5.png" class="w-[95%] h-[70%] pt-4 rounded-lg object-cover">
+                    <h2 class="font-bold">Scuba Diving</h2>
+                    <p class="px-2 text-gray-500">Dive into crystal-clear waters and discover a hidden world full of colors.</p>
+                </div>
+                <div id="card" class=" hidden w-full max-w-[300px] h-[280px] md:flex lg:hidden flex-col items-center rounded-lg shadow shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-250 ">
+                    <img src="assets/home/Rectangle 5.png" class="w-[95%] h-[70%] pt-4 rounded-lg object-cover">
+                    <h2 class="font-bold">Scuba Diving</h2>
+                    <p class="px-2 text-gray-500">Dive into crystal-clear waters and discover a hidden world full of colors.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="testimonial" class="mt-16 w-[90%] mx-auto mb-20">
+            <h2 class="text-lg text-green-800 font-semibold text-center">Testimonial</h2>
+            <h3 class="text-xl font-bold text-center mt-2 mb-8">What they say about us</h3>
+            <div id="box" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-items-center">
+                <div class="max-w-[400px] flex flex-col gap-8 p-4 rounded-md hover:shadow-md hover:scale-105 transition-all duration-250">
+                    <div class="flex items-center gap-2">
+                        <img src="assets/home/Ellipse (1).png" alt="">
+                        <span class="font-semibold text-lg">Sansa Stark</span>
+                    </div>
+                    <div class="text-gray-600">Booking my trip through this website was the best decision I made. Everything from destinations to planning was so smooth, and the experience felt truly magical.</div>
+                </div>
+                <div class="max-w-[400px] flex flex-col gap-8 bg-green-500 p-4 rounded-md hover:shadow-md hover:scale-105 transition-all duration-250">
+                    <div class="flex items-center gap-2">
+                        <img src="assets/home/Ellipse (2).png" alt="">
+                        <span class="font-semibold text-lg text-white">John Snow</span>
+                    </div>
+                    <div class="text-gray-700">I loved how easy it was to explore different destinations and plan my journey. The recommendations were perfect, and everything was well-organized.</div>
+                </div>
+                <div class="max-w-[400px] flex flex-col gap-8 p-4 rounded-md hover:shadow-md hover:scale-105 transition-all duration-250">
+                    <div class="flex items-center gap-2">
+                        <img src="assets/home/Ellipse (3).png" alt="">
+                        <span class="font-semibold text-lg">Ned Stark</span>
+                    </div>
+                    <div class="text-gray-600">This platform helped me discover places I never even knew existed. The visuals, details, and smooth booking process made my trip exciting right from the start.</div>
+                </div>
+                <div class="max-w-[400px] flex flex-col gap-8 p-4 rounded-md hover:shadow-md hover:scale-105 transition-all duration-250">
+                    <div class="flex items-center gap-2">
+                        <img src="assets/home/Ellipse (4).png" alt="">
+                        <span class="font-semibold text-lg">Robert Barathion</span>
+                    </div>
+                    <div class="text-gray-600">From booking to traveling, everything was seamless. The website is beautiful, fast, and very easy to use. It made my entire travel experience stress-free and enjoyable.</div>
+                </div>
+                <div class="max-w-[400px] flex flex-col gap-8 p-4 rounded-md hover:shadow-md hover:scale-105 transition-all duration-250">
+                    <div class="flex items-center gap-2">
+                        <img src="assets/home/Ellipse (5).png" alt="">
+                        <span class="font-semibold text-lg">Narendra modi</span>
+                    </div>
+                    <div class="text-gray-600">I was amazed by how responsive and user-friendly the website is. Planning my trip became so simple, and I could focus more on enjoying the journey rather than worrying about arrangements.</div>
+                </div>
+                <div class="max-w-[400px] flex flex-col gap-8 p-4 rounded-md hover:shadow-md hover:scale-105 transition-all duration-250">
+                    <div class="flex items-center gap-2">
+                        <img src="assets/home/Ellipse.png" alt="">
+                        <span class="font-semibold text-lg">Arya Stark</span>
+                    </div>
+                    <div class="text-gray-600">This travel website truly understands what travelers need. It combines great design with useful features, making every trip planning experience smooth and memorable.</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer" class="bg-green-800">
+            <div class="grid grid-cols-3 md:grid-cols-4 gap-8 py-12 px-8 w-[90%] mx-auto text-white/70 gap-8 justify-items-center justify-between">
+                <div class="hidden md:flex flex-col gap-8">
+                    <h2 class="font-bold text-xl text-white/90">Distance Magic</h2>
+                    <p>Distance Magic is a travel platform designed to help you discover amazing destinations and plan your journeys with ease. From exploring new places to creating unforgettable memories, we make every step of your travel experience simple and enjoyable.</p>
+                </div>
+                <div class="flex flex-col gap-8">
+                    <h2 class="font-bold text-xl text-white/90">Links</h2>
+                    <ul class="flex flex-col gap-3">
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="">Special Deals</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="">Community</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-8">
+                    <h2 class="font-bold text-xl text-white/90">Services</h2>
+                    <ul class="flex flex-col gap-3">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="news.html">Blog and Articles</a></li>
+                        <li><a href="">Terms and Conditions</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div >
+                <div class="flex flex-col gap-8">
+                    <h2 class="font-bold text-xl text-white/90">Contact</h2>
+                    <ul class="flex flex-col gap-3">
+                        <li>Address:Ram Nagar Colony</li>
+                        <li>Islamabad</li>
+                        <li>Amritsar, Punjab</li>
+                        <li>143001</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+
+        let links = document.querySelectorAll(".nav-links");
+        links.forEach((link)=>{
+            link.addEventListener("click",function(){
+                links.forEach((l)=>{
+                    l.classList.remove("opacity-100","font-bold");
+                    l.classList.add("opacity-80")
+                });
+                this.classList.remove("opacity-80");
+                this.classList.add("opacity-100","font-bold")
+            });
+        });
+
+        let mobileMenu = document.getElementById("mobileMenu");
+        let closeBtn = document.getElementById("closeBtn");
+        let menuBtn = document.querySelector(".menuBtn");
+
+        menuBtn.addEventListener("click",()=>{
+            mobileMenu.style.right ="0";
+        });
+
+        closeBtn.addEventListener("click",()=>{
+            mobileMenu.style.right ="-100%"
+        });
+
+        window.addEventListener("resize", () => {
+            if (window.innerWidth >= 768) {
+                mobileMenu.style.right = "-100%";
+            }
+        });
+    </script>
+</body>
+</html>

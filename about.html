@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="all.css">
+</head>
+<body>
+
+    <div>
+        <div id="intro" >
+            <div id="nav-container" class="px-4 fixed top-0 left-0 w-full bg-white z-50 pt-6 pb-4 flex justify-between items-center w-[95%] mx-auto ">
+               <div class="flex gap-2 items-center">
+                    <img src="Screenshot 2026-03-21 233132.png" class="w-8 h-8">
+                    <h2 class="text-2xl px-4 text-blue-600 font-semibold">Distance Magic</h2>
+                </div>
+                <ul id="navLinks" class="hidden md:flex justify-between gap-6 md:gap-8 lg:gap-10 text-md lg:text-lg text-gray-500">
+                    <li ><a href="index.html" class="nav-links  hover:text-gray-600">Home</a></li>
+                    <li><a href="discover.html" class="nav-links hover:text-gray-600">Discover</a></li>
+                    <li><a href="services.html" class="nav-links  hover:text-gray-600">Services</a></li>
+                    <li><a href="news.html" class="nav-links  hover:text-gray-600">News</a></li>
+                    <li><a href="about.html" class="nav-links  hover:text-gray-600">About Us</a></li>
+                    <li><a href="contact.html" class="nav-links hover:text-gray-600">Contact</a></li>
+                </ul>
+
+                <div id="acc" class="text-lg hidden md:flex items-center gap-x-2 text-blue-500">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <span class="text-lg">ID</span>
+                </div>
+                <div class="text-blue-500 md:hidden menuBtn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+            <div id="mobileMenu" class="fixed md:hidden md:right-[-100%] top-0 right-[-100%] w-[40%] h-full bg-pink-200 text-center  text-black z-50 transition-all duration-500">
+                <div class="p-4 text-2xl cursor-pointer" id="closeBtn">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </div>
+                <ul id="navLinks" class=" text-gray-700">
+                    <li ><a href="index.html" class="nav-links opacity-100 hover:opacity-90 hover:text-white">Home</a></li>
+                    <li><a href="discover.html" class="nav-links opacity-80 hover:opacity-90 hover:text-white">Discover</a></li>
+                    <li><a href="services.html" class="nav-links opacity-80 hover:opacity-90 hover:text-white">Services</a></li>
+                    <li><a href="news.html" class="nav-links opacity-80 hover:opacity-90 hover:text-white">News</a></li>
+                    <li><a href="about.html" class="nav-links opacity-80 hover:opacity-90 hover:text-white">About Us</a></li>
+                    <li><a href="contact.html" class="nav-links opacity-80 hover:opacity-90 hover:text-white">Contact</a></li>
+                </ul>
+            </div>
+    </div>
+
+    <div id="img" class="relative h-[250px] mt-8">
+        <img src="assets/about/image 3.png" class="w-full h-full object-cover">
+        <h2 class="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 text-2xl sm:text-3xl md:text-4xl text-white font-bold">About Us</h2>
+    </div>
+
+    <div id="main" class="mt-16 w-[90%] mx-auto mb-16">
+        <h2 class="text-xl font-bold text-center">Why Choose Us?</h2>
+        <p class="text-lg text-gray-800 mt-2 mb-4 text-center">These popular destinations has a lot to offer</p>
+        <div class="grid grid-cols-1 sm:grid-cols-3 justify-items-center gap-8">
+            <div class="box justify-items-center">
+                <img src="assets/about/Group 105.png" alt="">
+                <h2 class="mt-2 text-xl">Best Price Guarantee</h2>
+                <p class="text-gray-700 mt-2">Lorem ipsum dolor sit. Lorem ipsum dolor sit.</p>
+            </div>
+            <div class="box justify-items-center">
+                <img src="assets/about/healthicons_i-schedule-school-date-time-outline.png" alt="">
+                <h2 class="mt-2 text-xl">Easy Booking</h2>
+                <p class="text-gray-700 mt-2">Lorem ipsum dolor sit. Lorem ipsum dolor sit.</p>
+            </div>
+            <div class="box justify-items-center">
+                <img src="assets/about/ri_customer-service-2-line.png" alt="">
+                <h2 class="mt-2 text-xl">Customer Service 24h</h2>
+                <p class="text-gray-700 mt-2">Lorem ipsum dolor sit. Lorem ipsum dolor sit.</p>
+            </div>
+        </div>
+
+        <div id="about" class="flex gap-8 mt-24 items-center">
+            <div id="left" class="w-full sm:w-2/3 mt-8">
+                <h2 class="text-xl font-semibold mb-4">About DistanceMagic.com</h2>
+                <p class="text-gray-800 leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione qui omnis praesentium error ut? Quas autem hic vitae facilis unde vel molestiae dolor repudiandae mollitia quidem, corrupti odio adipisci deleniti dolorum iusto velit illum magnam doloremque harum fugiat doloribus dolores consequuntur? Itaque porro saepe sunt maxime enim atque nobis quis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum tenetur libero illum quos consequatur reiciendis incidunt consequuntur culpa sequi, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, sed! et earum, non reprehenderit maiores autem blanditiis eveniet, veniam aut velit.</p>
+                <p class="hidden lg:block text-gray-800 leading-relaxed mt-4">Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Non est libero natus hic aliquam veritatis sit a nesciunt doloremque doloribus! Molestiae quia, blanditiis quis doloribus distinctio aut. Voluptatibus eveniet quibusdam eaque iure, fuga cum quis alias cumque labore? Aspernatur obcaecati itaque illum ullam asperiores recusandae dignissimos. Ipsam fugit delectus assumenda! ipsum, dolor sit amet consectetur adipisicing elit. Eligendi quam repudiandae adipisci natus incidunt laboriosam, nisi, neque quod, fugiat obcaecati nobis explicabo sequi vel tenetur eveniet. Tenetur obcaecati quam nemo!</p>
+            </div>
+            <div id="right" class="w-1/3 hidden sm:block">
+                <img src="assets/about/Rectangle 25.png" class="h-[450px]">
+            </div>
+        </div>
+
+        <div id="our-team" class="mt-8">
+            <h2 class="text-center md:text-left text-xl font-bold">Our Teams</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 mt-8 gap-8 justify-items-center">
+                <div class="box">
+                    <img src="assets/about/Rectangle 30.png">
+                    <h3 class="mt-2 font-bold">Narendra Modi</h3>
+                    <p>Tour Planner</p>
+                </div>
+                <div class="box">
+                    <img src="assets/about/Rectangle 30 (2).png">
+                    <h3 class="mt-2 font-bold">Donald Trump</h3>
+                    <p>Finance Officer</p>
+                </div>
+                <div class="box">
+                    <img src="assets/about/Rectangle 30 (1).png">
+                    <h3 class="mt-2 font-bold">Alia</h3>
+                    <p>Tour Guide</p>
+                </div>
+                <div class="box">
+                    <img src="assets/about/Rectangle 30 (3).png">
+                    <h3 class="mt-2 font-bold">Elon Musk</h3>
+                    <p>Medical Check</p>
+                </div>
+                <div class="box hidden md:block">
+                    <img src="assets/about/Rectangle 30 (4).png">
+                    <h3 class="mt-2 font-bold">Meloni</h3>
+                    <p>Web Designer</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 my-28 gap-8 w-[75%] mx-auto justify-items-center">
+            <div class="text-center">
+                <img src="assets/about/fontisto_island.png" class=>
+                <h2 class="mt-4 text-gray-400  font-semibold text-lg">Island tour</h2>
+            </div>
+            <div class="text-center">
+                <img src="assets/about/gis_map-route.png" class=>
+                <h2 class="mt-4 text-gray-400  font-semibold text-lg">Explore World</h2>
+            </div>
+            <div class="text-center">
+                <img src="assets/about/healthicons_city-outline.png" class=>
+                <h2 class="mt-4 text-gray-400 font-semibold text-lg">City tour</h2>
+            </div>
+            <div class="text-center">
+                <img src="assets/about/Group 113.png" class=>
+                <h2 class="mt-4 text-gray-700 font-semibold text-lg"></h2>
+            </div>
+        </div>
+    </div>
+
+     <div id="footer" class="bg-green-800">
+            <div class="grid grid-cols-3 md:grid-cols-4 gap-8 py-12 px-8 w-[90%] mx-auto text-white/70 gap-8 justify-items-center justify-between">
+                <div class="hidden md:flex flex-col gap-8">
+                    <h2 class="font-bold text-xl text-white/90">Distance Magic</h2>
+                    <p>Distance Magic is a travel platform designed to help you discover amazing destinations and plan your journeys with ease. From exploring new places to creating unforgettable memories, we make every step of your travel experience simple and enjoyable.</p>
+                </div>
+                <div class="flex flex-col gap-8">
+                    <h2 class="font-bold text-xl text-white/90">Links</h2>
+                    <ul class="flex flex-col gap-3">
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="">Special Deals</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="">Community</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-8">
+                    <h2 class="font-bold text-xl text-white/90">Services</h2>
+                    <ul class="flex flex-col gap-3">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="news.html">Blog and Articles</a></li>
+                        <li><a href="">Terms and Conditions</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div >
+                <div class="flex flex-col gap-8">
+                    <h2 class="font-bold text-xl text-white/90">Contact</h2>
+                    <ul class="flex flex-col gap-3">
+                        <li>Address:Ram Nagar Colony</li>
+                        <li>Islamabad</li>
+                        <li>Amritsar, Punjab</li>
+                        <li>143001</li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+     <script>
+
+        let links = document.querySelectorAll(".nav-links");
+             links.forEach(link => {
+                if (link.href === window.location.href) {
+                    link.classList.add("font-bold", "text-green-500");
+                }
+
+                link.addEventListener("click", function () {
+                    links.forEach(l => {
+                        l.classList.remove("font-bold", "text-green-500");
+                    });
+
+                    this.classList.add("font-bold", "text-green-500");
+                });
+            });
+       
+
+        let mobileMenu = document.getElementById("mobileMenu");
+        let closeBtn = document.getElementById("closeBtn");
+        let menuBtn = document.querySelector(".menuBtn");
+
+        menuBtn.addEventListener("click",()=>{
+            mobileMenu.style.right ="0";
+        });
+
+        closeBtn.addEventListener("click",()=>{
+            mobileMenu.style.right ="-100%"
+        });
+
+        window.addEventListener("resize", () => {
+            if (window.innerWidth >= 768) {
+                mobileMenu.style.right = "-100%";
+            }
+        });
+    </script>
+</body>
+</html>

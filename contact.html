@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="all.css">
+</head>
+<body>
+    <div>
+        <div id="intro" >
+            <div id="nav-container" class="px-4 fixed top-0 left-0 w-full bg-white z-50 pt-6 pb-4 flex justify-between items-center w-[95%] mx-auto ">
+                <div class="flex gap-2 items-center">
+                    <img src="Screenshot 2026-03-21 233132.png" class="w-8 h-8">
+                    <h2 class="text-2xl px-4 text-blue-600 font-semibold">Distance Magic</h2>
+                </div>
+                <ul id="navLinks" class="hidden md:flex justify-between gap-6 md:gap-8 lg:gap-10 text-md lg:text-lg text-gray-500">
+                    <li ><a href="index.html" class="nav-links  hover:text-gray-600">Home</a></li>
+                    <li><a href="discover.html" class="nav-links hover:text-gray-600">Discover</a></li>
+                    <li><a href="services.html" class="nav-links  hover:text-gray-600">Services</a></li>
+                    <li><a href="news.html" class="nav-links  hover:text-gray-600">News</a></li>
+                    <li><a href="about.html" class="nav-links  hover:text-gray-600">About Us</a></li>
+                    <li><a href="contact.html" class="nav-links hover:text-gray-600">Contact</a></li>
+                </ul>
+
+                <div id="acc" class="text-lg hidden md:flex items-center gap-x-2 text-blue-500">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <span class="text-lg">ID</span>
+                </div>
+                <div class="text-blue-500 md:hidden menuBtn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+            <div id="mobileMenu" class="fixed md:hidden md:right-[-100%] top-0 right-[-100%] w-[40%] h-full bg-pink-200 text-center  text-black z-50 transition-all duration-500">
+                <div class="p-4 text-2xl cursor-pointer" id="closeBtn">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </div>
+                <ul id="navLinks" class=" text-gray-700">
+                    <li ><a href="index.html" class="nav-links opacity-100 hover:opacity-90 hover:text-white">Home</a></li>
+                    <li><a href="discover.html" class="nav-links opacity-80 hover:opacity-90 hover:text-white">Discover</a></li>
+                    <li><a href="services.html" class="nav-links opacity-80 hover:opacity-90 hover:text-white">Services</a></li>
+                    <li><a href="news.html" class="nav-links opacity-80 hover:opacity-90 hover:text-white">News</a></li>
+                    <li><a href="about.html" class="nav-links opacity-80 hover:opacity-90 hover:text-white">About Us</a></li>
+                    <li><a href="contact.html" class="nav-links opacity-80 hover:opacity-90 hover:text-white">Contact</a></li>
+                </ul>
+            </div>
+    </div>
+
+    <div id="img" class="relative h-[250px] mt-8">
+        <img src="assets/image 3.png" class="w-full h-full object-cover">
+        <h2 class="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 text-2xl sm:text-3xl md:text-4xl text-white font-bold">Contact Us</h2>
+    </div>
+
+    <div id="main" class="mt-12 w-[95%] mx-auto flex gap-8">
+        <div id="left" class="w-full sm:w-1/2">
+            <h2 class="text-2xl font-bold text-gray-700">Get In Touch</h2>
+            <p class="mt-10 text-gray-600">Have questions about your next adventure or need help planning the perfect trip? We’re here to make your travel experience smooth and memorable. Whether you’re looking for destination ideas, special deals, or personalized travel assistance, feel free to reach out to us anytime. Our team at Distance Magic is always ready to guide you every step of the way—because your journey matters to us.</p>
+            <form class="mt-8">
+                <label for="name" class="text-gray-600 text-lg font-semibold">Name:</label><br>
+                <input type="text" id="name" placeholder="Enter Your Name" class="py-3 px-2 border border-2 mb-2 border-gray-500 w-full rounded-lg"><br>
+                <label for="email" class="text-gray-600 text-lg font-semibold " >Email:</label><br>
+                <input type="email" id="email"  placeholder="Enter Your Email" class="py-3 px-2 border border-2 mb-2 border-gray-500 w-full rounded-lg"><br>
+                <label for="msg" class="text-gray-600 text-lg font-semibold">Message:</label><br>
+                <textarea name="msg" id="msg" rows="8" cols="3" placeholder="Enter Message" class="py-3 px-2 border border-2 mb-2 border-gray-500 w-full rounded-lg"></textarea><br>
+                <button type="submit" class="my-2 px-2 py-1 bg-green-700 text-white text-lg rounded-md">Send</button>
+            </form>
+        </div>
+        <div id="right" class="hidden sm:block sm:w-1/2 ">
+            <iframe 
+                src="https://maps.google.com/maps?q=Amritsar&output=embed"
+                class="w-full h-[300px] rounded-lg border-0">
+            </iframe>
+            <div id="address" class="my-4 grid grid-cols-2 gap-4">
+                <div>
+                    <span class="font-semibold text-green-700 mr-2">Address:</span> <span>Ram Nagar Colony, Gali -4</span>
+                </div>
+                <div>
+                    <span class="font-semibold text-green-700 mr-2">Phone:</span><span>+917901923971</span>
+                </div>
+                <div>
+                    <span class="font-semibold text-green-700 mr-2">City:</span><span>Amritsar</span>
+                </div>
+                <div>
+                    <span class="font-semibold text-green-700 mr-2">Email:</span><span>Krishna@gmail.com</span>
+                </div>
+                <div>
+                    <span class="font-semibold text-green-700 mr-2">Open:</span><span>8:00</span>
+                </div>
+                <div>
+                    <span class="font-semibold text-green-700 mr-2">Close</span><span>18:00</span>
+                </div>
+            </div>
+            <div class="flex gap-4 justify-center items-center mt-16">
+                <img src="Screenshot 2026-03-21 233132.png" class="w-24 h-24" >
+                <H2 class="text-4xl font-bold text-gray-700">@Distance Magic</H2>
+            </div>
+        </div>
+        
+    </div>
+
+
+     <div id="footer" class="bg-green-800">
+            <div class="grid grid-cols-3 md:grid-cols-4 gap-8 py-12 px-8 w-[90%] mx-auto text-white/70 gap-8 justify-items-center justify-between">
+                <div class="hidden md:flex flex-col gap-8">
+                    <h2 class="font-bold text-xl text-white/90">Distance Magic</h2>
+                    <p>Distance Magic is a travel platform designed to help you discover amazing destinations and plan your journeys with ease. From exploring new places to creating unforgettable memories, we make every step of your travel experience simple and enjoyable.</p>
+                </div>
+                <div class="flex flex-col gap-8">
+                    <h2 class="font-bold text-xl text-white/90">Links</h2>
+                    <ul class="flex flex-col gap-3">
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="">Special Deals</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="">Community</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-8">
+                    <h2 class="font-bold text-xl text-white/90">Services</h2>
+                    <ul class="flex flex-col gap-3">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="news.html">Blog and Articles</a></li>
+                        <li><a href="">Terms and Conditions</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div >
+                <div class="flex flex-col gap-8">
+                    <h2 class="font-bold text-xl text-white/90">Contact</h2>
+                    <ul class="flex flex-col gap-3">
+                        <li>Address:Ram Nagar Colony</li>
+                        <li>Islamabad</li>
+                        <li>Amritsar, Punjab</li>
+                        <li>143001</li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+     <script>
+
+        let links = document.querySelectorAll(".nav-links");
+             links.forEach(link => {
+                if (link.href === window.location.href) {
+                    link.classList.add("font-bold", "text-green-500");
+                }
+
+                link.addEventListener("click", function () {
+                    links.forEach(l => {
+                        l.classList.remove("font-bold", "text-green-500");
+                    });
+
+                    this.classList.add("font-bold", "text-green-500");
+                });
+            });
+       
+
+        let mobileMenu = document.getElementById("mobileMenu");
+        let closeBtn = document.getElementById("closeBtn");
+        let menuBtn = document.querySelector(".menuBtn");
+
+        menuBtn.addEventListener("click",()=>{
+            mobileMenu.style.right ="0";
+        });
+
+        closeBtn.addEventListener("click",()=>{
+            mobileMenu.style.right ="-100%"
+        });
+
+        window.addEventListener("resize", () => {
+            if (window.innerWidth >= 768) {
+                mobileMenu.style.right = "-100%";
+            }
+        });
+    </script>
+</body>
+</html>
